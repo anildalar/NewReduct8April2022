@@ -1,0 +1,81 @@
+There are 4 Main Element of Redux
+1. Actions
+2. Action Creators
+3. Reducer
+4. Store
+
+Redux
+1. Action
+		Actions are js object {} which contain "type" property
+	Eg.
+		let myaction = { type:'login',username:'oklabs' }
+		let myaction2 = { 'type':'logout' }
+
+2. Action Creators
+		Action Creators are functions which returns actions
+		
+		let abhishek = ()=>{
+				
+			return { type:"anything" }
+		}
+	
+
+3.Reducer
+
+ Reducers are functions which accept olddata/oldsate and action and returns newdata/newstate.
+
+Eg.
+
+		let rootReducer = (olddata,action)=>{
+				
+			return newstate;
+		}
+
+
+4. Store
+
+	Store is a global object which contain application data
+
+  In order to access the data there are some methods avaialbe
+	
+
+ 	JS Object 
+			{
+					1. P:V
+					2. Methods
+			}
+
+
+What are the methods available in store object?
+1. dispatch
+2. getState
+3. replaceReducer
+4. subscribe
+
+
+
+
+	let store = {
+								appdata:"ok",
+								getState:function(){
+										console.log(this.appdata)
+								}		
+							}
+
+
+
+
+React useReducer Hook
+Actions 
+	Actions are js object which contain "type" 	attributes;
+	
+What are Reducers?
+
+	Reducers are functions which accept olddata/oldsate and action and returns newdata/newstate.
+
+Eg.
+
+		let rootReducer = (olddata,action)=>{
+				
+			return newstate;
+		}
